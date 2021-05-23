@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01b - Getting Up and Running</title>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+            font-weight: bolder;
+        }
+        .p1{
+            background-color: blueviolet;
+            color: white;
+            font-size: large;
+        }
+        #p2{
+            background-color: teal;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+        #p4{
+            background-color: darkblue;
+            color: gold;
+            font-style: italic;
+            font-weight: bolder;
+        }
+    </style>
+    <script>
+        alert("Welcome in Ghalia Garage, \nYou need to know your feedback or knowledge of car.");
+        let customerName = prompt("What's your name Sir: ");
+        console.log(customerName);
+
+        alert("Hello " + customerName + " In my website.\nPlease answering for the question you are showen when you are click on OK :)");
+
+        let car = prompt("Which Type of car do you like: ");
+        console.log(car);
+
+        let color = prompt("Which color is favourite for you : ");
+        console.log(color);
+
+        let typeOfCar = prompt("Which type of " + car + " Do ypu like : " );
+        console.log(typeOfCar);
+
+        function result(){
+            alert("Hello " + customerName + " in Ghalia Garage, \nYou are select : " + car + " \nand the color is : " + color + "\nand the Favourite type is : " + typeOfCar + ".");
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome in Ghalia Garage</h1>
+
+    <label>If you need to shown the answering in your prompt click on : <button style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" onclick="result()">Here</button></label>
+    <p class="p1"><script>document.write("Customer Name : " + customerName)</script></p>
+    <p id="p2"><script>document.write("The car you are Selected is : " + car)</script></p>
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: coral; color: cornsilk;">
+    <script>document.write("The Fav Color is : "+color)</script></p>
+    <p id="p4"><script>document.write("The Type you are inputed is : "+typeOfCar)</script></p>
+</body>
+</html>
